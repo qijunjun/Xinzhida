@@ -59,11 +59,11 @@ $(function(){
     oUl.html(oUl.html()+oUl.html());
     function move1(){
         left-=delay;
-        if(left<-667){
+        if(left<-671){
             left = 0;
         }
         if(left>0){
-            left = -667;
+            left = -671;
         }
         oUl.css({left:left});
     }
@@ -75,11 +75,11 @@ $(function(){
         oUl.eq($(this).index()).mouseout(function(){
             timer1= setInterval(function(){
                 left-=delay;
-                if(left<-667){
+                if(left<-671){
                     left = 0;
                 }
                 if(left>0){
-                    left = -667;
+                    left = -671;
                 }
                 oUl.css({left:left});
             },30);
