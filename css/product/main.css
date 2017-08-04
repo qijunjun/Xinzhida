@@ -1,0 +1,28 @@
+/*内容区块*/
+.content{
+    width:1113px;
+    margin:0 auto;
+    background:#fff;
+    height:500px;
+}
+.content aside{
+    width:30%;
+}
+.content aside .companyNav h3{
+    background:#363601;
+    color:#fff;
+    height:35px;
+    line-height: 35px;
+    text-indent: 30px;
+}
+.content aside .companyNav ul li{
+    height:36px;
+    line-height:36px;
+    text-indent: 25px;
+    background: #ccc;
+    border-bottom: 1px solid #fff;
+}
+.content .product-content{
+    width:68%;
+    margin-left:2%;
+}
