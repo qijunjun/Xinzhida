@@ -25,6 +25,10 @@ body{
     padding-right: 15px;
 }
 /*头部样式*/
+header{
+    width:1113px;
+    margin:0 auto;
+}
 header .logo{
     width:559px;
 }
@@ -38,9 +42,13 @@ header .header-title .top a{
     color: #aba50f;
 }
 /*菜单样式*/
-.nav{
-    height:40px;
+nav{
     background: url("../images/navbj.jpg");
+}
+.nav{
+    width:1113px;
+    height:40px;
+    margin:0 auto;
 }
 .nav li{
     width:10%;
@@ -108,12 +116,11 @@ header .header-title .top a{
 /*内容区块*/
 .content{
     width:1113px;
-    height:1200px;
     margin:0 auto;
     background:url("../images/content_bg.jpg");
 }
-.content .content-top{
-    height:380px;
+.content .content-top,.content .content-bottom{
+    height:360px;
 }
 .content section{
     width:32%;
@@ -150,10 +157,10 @@ header .header-title .top a{
     margin-top:20px;
     display: inline-block;
 }
-.content section .content-con ul{
+.content section .content-con ul.list{
     padding-top:5px;
 }
-.content section .content-con ul li{
+.content section .content-con ul.list li{
     text-align: left;
     height:30px;
     line-height: 30px;
@@ -173,13 +180,59 @@ header .header-title .top a{
 }
 .content section .content-con .companyInfo p
 {
-    padding-left:30px;
+    padding-left:12px;
+}
+/*内容视频、产品展示*/
+.content .content-bottom section:last-child{
+    width:66%;
+    margin-left:1%;
+    margin-right:1px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.content .content-bottom .more{
+    width:70px;
+    height:35px;
+    cursor: pointer;
+    background: url("../images/more.jpg") 0 center no-repeat;
+}
+/*无缝滚动样式*/
+.content .content-bottom .scroll{
+    width:90%;
+    height:135px;
+    margin:0 auto;
+    padding-left:10px;
+    position: relative;
+    top:25%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+
+}
+.content .content-bottom .ul_list{
+    display: flex;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.content .content-bottom .ul_list li{
+    width:120px;
+    height:120px;
+    margin-right:10px;
+}
+.content .content-bottom .ul_list li img{
+    width:100%;
+    height:100px;
+    line-height: 100px;
 }
 /*版权信息样式*/
 .footer{
-    margin-top:30px;
+    margin-top:10px;
     padding:20px 0 35px;
-    border-top:2px solid #37ab40;
 }
 .footer p{
     color:#4e4e4e;

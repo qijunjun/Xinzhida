@@ -2,6 +2,7 @@
  * Created by 123 on 2017/8/4.
  */
 $(function(){
+    //幻灯片
     autoplay();
     var prev = 0;
     var $li = $(".slide li");
@@ -49,5 +50,39 @@ $(function(){
         var i = $(this).index();
         move(prev,i);
         $(this).addClass("active").siblings().removeClass("active");
+    });
+    // 幻灯片结束
+    // 无缝滚动开始
+    var oUl = $(".ul_list");
+    var left = 0;
+    var delay = 2;
+    oUl.html(oUl.html()+oUl.html());
+    function move1(){
+        left-=delay;
+        if(left<-667){
+            left = 0;
+        }
+        if(left>0){
+            left = -667;
+        }
+        oUl.css({left:left});
+    }
+    var timer1 =setInterval(move1,30);
+    oUl.children().each(function(){
+        oUl.eq($(this).index()).mouseover(function(){
+            clearInterval(timer1);
+        });
+        oUl.eq($(this).index()).mouseout(function(){
+            timer1= setInterval(function(){
+                left-=delay;
+                if(left<-667){
+                    left = 0;
+                }
+                if(left>0){
+                    left = -667;
+                }
+                oUl.css({left:left});
+            },30);
+        })
     })
 });
