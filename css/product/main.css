@@ -3,19 +3,18 @@
     width:1113px;
     margin:0 auto;
     background:#fff;
-    height:500px;
 }
 .content aside{
-    width:30%;
+    width:25%;
 }
-.content aside .companyNav h3{
+.content aside div h3{
     background:#363601;
     color:#fff;
     height:35px;
     line-height: 35px;
     text-indent: 30px;
 }
-.content aside .companyNav ul li{
+.content aside .companyNav ul li,.content aside .product-feilei ul li{
     height:36px;
     line-height:36px;
     text-indent: 25px;
@@ -23,6 +22,41 @@
     border-bottom: 1px solid #fff;
 }
 .content .product-content{
-    width:68%;
+    width:72%;
     margin-left:2%;
+}
+.content .product-content .top{
+    margin-top:10px;
+    border-bottom:1px dashed #333;
+}
+.content .product-content .con{
+    margin-top:15px;
+}
+.content .product-content .con h3{
+    background:#f7f7f7;
+    display: inline-block;
+    padding: 5px 15px;
+    border:1px solid #ccc;
+    border-bottom: none;
+}
+.content .product-content .con .detail{
+    border:1px solid #ccc;
+    height:500px;
+    margin-top:-1px;
+}
+.content .product-content .con .detail li{
+    width:20%;
+    float:left;
+}
+.content .product-content .con .detail li a{
+    display: block;
+    margin:15px 10px 0;
+}
+.content .product-content .con .detail li img{
+    width:90%;
+    border: 1px solid #ccc;
+    padding:15px 5%;
+}
+.content .product-content .con .detail h4{
+    text-align: center;
 }
