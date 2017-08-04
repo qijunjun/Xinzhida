@@ -1,0 +1,191 @@
+body{
+    font-size:14px;
+    font-family: '微软雅黑';
+    color:#666;
+    background: url('../images/bj.gif') repeat;
+}
+/*公用样式*/
+.pd15{
+    padding:15px;
+}
+.pdl15{
+    padding-left:15px;
+}
+.pdt15{
+    padding-top:15px;
+}
+.pdr15{
+    padding-right:15px;
+}
+.pdb15{
+    padding-bottom:15px;
+}
+.padlr{
+    padding-left:15px;
+    padding-right: 15px;
+}
+/*头部样式*/
+header .logo{
+    width:559px;
+}
+header .header-title{
+    width:173px;
+}
+header .header-title .top{
+    text-align: center;
+}
+header .header-title .top a{
+    color: #aba50f;
+}
+/*菜单样式*/
+.nav{
+    height:40px;
+    background: url("../images/navbj.jpg");
+}
+.nav li{
+    width:10%;
+    float: left;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background: url('../images/navimg.jpg')  -1px 3px no-repeat;
+}
+.nav li:first-child{
+    background: none;
+}
+.nav li a{
+    width:100%;
+    display: inline-block;
+}
+.nav li a:hover{
+    color:#fff;
+    background: #ab9b0d;
+}
+/*幻灯片*/
+.banner{
+    width:1113px;
+    margin:0 auto;
+    position: relative;
+}
+.banner ul.slide{
+    width:1113px;
+    height:454px;
+    position: relative;
+    overflow: hidden;
+}
+.banner ul.slide li{
+    position: absolute;
+    left:1113px;
+    top:0;
+}
+.banner ul.slide li a,.banner ul.slide li img{
+    width:1113px;
+    display: block;
+    height:454px;
+}
+.banner ul.slide li:first-child{
+    left:0;
+}
+.banner ul.points{
+    position:absolute;
+    right:0;
+    bottom:0;
+    font-size: 0;
+}
+.banner ul.points li{
+    width:40px;
+    background:orange;
+    color:#fff;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-right:1px solid #fff;
+    cursor: pointer;
+}
+.banner ul.points li.active{
+    background: #43c5cc;
+}
+/*内容区块*/
+.content{
+    width:1113px;
+    height:1200px;
+    margin:0 auto;
+    background:url("../images/content_bg.jpg");
+}
+.content .content-top{
+    height:380px;
+}
+.content section{
+    width:32%;
+    height:340px;
+    border:1px solid #ccc;
+}
+.content section:first-child,.content section:last-child{
+    margin-left:1px;
+    margin-right:1px;
+}
+.content section:nth-child(2){
+    margin-left:2%;
+    margin-right:1%;
+}
+.content section .content-title{
+    height:40px;
+    line-height: 40px;
+    background: url("../images/content_sm_bg.jpg");
+}
+/*版块标题*/
+.content section .content-title h3{
+    text-indent: 30px;
+    background: url("../images/contentimg.jpg") 10px center no-repeat;
+}
+/*版块内容*/
+.content section .content-con{
+    text-align: center;
+}
+.content section .content-img{
+    height:140px;
+    line-height: 140px;
+}
+.content section .content-con img{
+    margin-top:20px;
+    display: inline-block;
+}
+.content section .content-con ul{
+    padding-top:5px;
+}
+.content section .content-con ul li{
+    text-align: left;
+    height:30px;
+    line-height: 30px;
+    text-indent: 10px;
+    margin-top:5px;
+    margin-left:20px;
+    border-bottom: 1px dashed #ccc;
+    background: url("../images/ico.jpg") 0 center no-repeat;
+}
+.content section .content-con a{
+    width:100%;
+    display: inline-block;
+}
+.content section .content-con .explain,.content section .content-con .companyInfo p{
+    line-height:30px;
+    text-align: left;
+}
+.content section .content-con .companyInfo p
+{
+    padding-left:30px;
+}
+/*版权信息样式*/
+.footer{
+    margin-top:30px;
+    padding:20px 0 35px;
+    border-top:2px solid #37ab40;
+}
+.footer p{
+    color:#4e4e4e;
+    text-align: center;
+    margin-top:15px;
+}
+.footer p a{
+    color:#4e4e4e;
+}
