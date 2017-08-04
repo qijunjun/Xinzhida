@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <!--头部-->
@@ -28,9 +29,16 @@
     <!--导航菜单-->
     <nav>
         <ul class="nav padlr">
-            <li><a href="javascript:void(0);">首页</a></li>
+            <li class="current"><a href="javascript:void(0);">首页</a></li>
             <li><a href="javascript:void(0);">关于我们</a></li>
-            <li><a href="javascript:void(0);">新闻资讯</a></li>
+            <li>
+                <a href="javascript:void(0);">新闻资讯</a>
+                <ul>
+                    <li><a href="">公司新闻</a></li>
+                    <li><a href="">行业新闻</a></li>
+                    <li><a href="">国内新闻</a></li>
+                </ul>
+            </li>
             <li><a href="javascript:void(0);">产品介绍</a></li>
             <li><a href="javascript:void(0);">解决方案</a></li>
             <li><a href="javascript:void(0);">体验中心</a></li>
@@ -136,29 +144,36 @@
                     <h3 class="float_left">产品展示&nbsp;&nbsp;Product display</h3>
                     <a class="float_right more"></a>
                 </div>
-                <div class="scroll">
-                    <ul class="ul_list">
-                        <li>
-                            <img src="images/jiameng2.jpg" alt="第一张图片">
-                            <a href="">恒盛豪庭</a>
-                        </li>
-                        <li>
-                            <img src="images/jiameng3.jpg" alt="第二张图片">
-                            <a href="">恒盛豪庭</a>
-                        </li>
-                        <li>
-                            <img src="images/jiameng4.jpg" alt="第三张图片">
-                            <a href="">恒盛豪庭</a>
-                        </li>
-                        <li>
-                            <img src="images/jiameng5.jpg" alt="第四张图片">
-                            <a href="">恒盛豪庭</a>
-                        </li>
-                        <li>
-                            <img src="images/jiameng6.jpg" alt="第五张图片">
-                            <a href="">恒盛豪庭</a>
-                        </li>
-                    </ul>
+                <div id="demo" class="slide clearfix">
+                    <div class="demo clearfix">
+                        <div id="demo1" class="float_left">
+                            <a>
+                                <img src="images/jiameng1.jpg" alt="">
+                                <h3>恒盛豪庭</h3>
+                            </a>
+                            <a>
+                                <img src="images/jiameng2.jpg" alt="">
+                                <h3>恒盛豪庭</h3>
+                            </a>
+                            <a>
+                                <img src="images/jiameng3.jpg" alt="">
+                                <h3>恒盛豪庭</h3>
+                            </a>
+                            <a>
+                                <img src="images/jiameng4.jpg" alt="">
+                                <h3>恒盛豪庭</h3>
+                            </a>
+                            <a>
+                                <img src="images/jiameng5.jpg" alt="">
+                                <h3>恒盛豪庭</h3>
+                            </a>
+                            <a>
+                                <img src="images/jiameng6.jpg" alt="">
+                                <h3>恒盛豪庭</h3>
+                            </a>
+                        </div>
+                        <div id="demo2" class="float_left"></div>
+                    </div>
                 </div>
             </section>
         </div>

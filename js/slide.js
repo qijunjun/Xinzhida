@@ -53,36 +53,23 @@ $(function(){
     });
     // 幻灯片结束
     // 无缝滚动开始
-    var oUl = $(".ul_list");
-    var left = 0;
-    var delay = 2;
-    oUl.html(oUl.html()+oUl.html());
-    function move1(){
-        left-=delay;
-        if(left<-671){
-            left = 0;
+    var speed =10;
+    var demo = document.getElementById("demo");
+    var demo1 = document.getElementById("demo1");
+    var demo2 = document.getElementById("demo2");
+    demo2.innerHTML = demo1.innerHTML;
+    function slide(){
+        if(demo2.offsetWidth-demo.scrollLeft <=0){
+            demo.scrollLeft -=demo2.offsetWidth;
+        }else{
+            demo.scrollLeft++;
         }
-        if(left>0){
-            left = -671;
-        }
-        oUl.css({left:left});
     }
-    var timer1 =setInterval(move1,30);
-    oUl.children().each(function(){
-        oUl.eq($(this).index()).mouseover(function(){
-            clearInterval(timer1);
-        });
-        oUl.eq($(this).index()).mouseout(function(){
-            timer1= setInterval(function(){
-                left-=delay;
-                if(left<-671){
-                    left = 0;
-                }
-                if(left>0){
-                    left = -671;
-                }
-                oUl.css({left:left});
-            },30);
-        })
+    timer = setInterval(slide,speed);
+    $(".demo").mouseenter(function(){
+        clearInterval(timer);
+    });
+    $(".demo").mouseleave(function(){
+        timer = setInterval(slide,speed);
     })
 });

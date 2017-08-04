@@ -50,7 +50,7 @@ nav{
     height:40px;
     margin:0 auto;
 }
-.nav li{
+.nav>li{
     width:10%;
     float: left;
     height:40px;
@@ -58,16 +58,38 @@ nav{
     text-align: center;
     background: url('../images/navimg.jpg')  -1px 3px no-repeat;
 }
-.nav li:first-child{
+.nav>li:first-child{
     background: none;
 }
-.nav li a{
+.nav>li a{
     width:100%;
     display: inline-block;
 }
-.nav li a:hover{
+.nav>li>a:hover,.nav>li.current>a{
     color:#fff;
     background: #ab9b0d;
+}
+/*二级菜单*/
+.nav>li{
+    position: relative;
+}
+.nav>li>ul{
+    width:100%;
+    position:absolute;
+    z-index:999;
+    background:#ccc;
+    display: none;
+}
+.nav>li:hover ul{
+    display: block;
+}
+.nav>li:hover ul li:hover a{
+    background:#00CC99;
+    color:#fff;
+}
+.nav>li>ul li{
+    width:100%;
+    border-bottom:1px solid #333;
 }
 /*幻灯片*/
 .banner{
@@ -198,40 +220,30 @@ nav{
     background: url("../images/more.jpg") 0 center no-repeat;
 }
 /*无缝滚动样式*/
-.content .content-bottom .scroll{
-    width:90%;
-    height:135px;
-    margin:0 auto;
-    padding-left:10px;
-    position: relative;
-    top:25%;
-    display: block;
-    text-align: center;
+.content .content-bottom .slide{
+    width:671px;
+    margin:80px auto;
     overflow: hidden;
 }
-.content .content-bottom .ul_list{
-    display: flex;
-    position: absolute;
-    left:0;
-    top:0;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
+.content .content-bottom .slide .demo{
+    width:800%;
 }
-.content .content-bottom .ul_list li{
+.content .content-bottom .slide div a{
+    width:130px;
+    height:130px;
+    background: #fff;
+    padding-top:10px;
+    display: inline-block;
+    margin-left:5px;
+}
+.content .content-bottom .slide img{
     width:120px;
-    height:120px;
-    margin-right:10px;
-    cursor: pointer;
-}
-.content .content-bottom .ul_list li img{
-    width:100%;
     height:100px;
     line-height: 100px;
 }
 /*版权信息样式*/
 .footer{
-    
+
     margin-top:10px;
     padding:20px 0 35px;
 }
