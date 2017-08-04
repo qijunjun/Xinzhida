@@ -208,7 +208,6 @@ nav{
     display: block;
     text-align: center;
     overflow: hidden;
-
 }
 .content .content-bottom .ul_list{
     display: flex;
@@ -223,6 +222,7 @@ nav{
     width:120px;
     height:120px;
     margin-right:10px;
+    cursor: pointer;
 }
 .content .content-bottom .ul_list li img{
     width:100%;
