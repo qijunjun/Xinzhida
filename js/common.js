@@ -50,6 +50,14 @@ $(function(){
         move(prev,i);
         $(this).addClass("active").siblings().removeClass("active");
     });
+    $(".nav").delegate("li","click",function(){
+        var id =$(this).index();
+        var href = $(this).children("a").attr("href");
+        if(href == "index.html"){
+            $(this).addClass("current");
+        }
+        $(this).children("a").attr("href",href+"?id="+id);
+    });
     // 在线咨询
     $(window).scroll(function(){
         var top = $(this).scrollTop();
@@ -61,5 +69,8 @@ $(function(){
         else{
             $(".contact").css({top:top});
         }
-    })
+    });
+    //实现点击哪个链接，对应的链接上面样式改变
+    var str = window.location.href.split("=")[1];
+    $(".nav>li").eq(str).addClass("current");
 });

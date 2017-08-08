@@ -1,0 +1,71 @@
+aside .companyNew li{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .con{
+    margin-top:15px;
+}
+.content .con>h3{
+    background:linear-gradient(#fff,#ccc);
+    display: inline-block;
+    padding: 5px 15px;
+    border:1px solid #ccc;
+    border-bottom: none;
+}
+.news{
+    border:1px solid #ccc;
+    margin-top:-1px;
+}
+.news ul.newslist li{
+    height:40px;
+    line-height: 40px;
+    padding-left:10px;
+    position: relative;
+    background: url("../../images/news_list_border.jpg") 0 bottom repeat-x;
+}
+.news ul.newslist li:last-child{
+     background: none;
+ }
+.news ul.newslist li a{
+    display: inline-block;
+    text-indent: 12px;
+    color: #666;
+    background:url("../../images/ico2.jpg") 0 center no-repeat;
+}
+.news ul.newslist li span{
+    position: absolute;
+    right:15px;
+    color: #333;
+}
+.news ul.page{
+    display: flex;
+    margin-bottom:15px;
+    justify-content: center;
+}
+.news ul.page li{
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    border:1px solid #666;
+    margin-left:5px;
+    cursor: pointer;
+}
+.news ul.page li.current,.news ul.page li:hover{
+    border: 1px solid #0e90d2;
+}
+.news ul.page li.current a,.news ul.page li:hover a{
+    color:#fff;
+    background: #0e90d2;
+    display: block;
+}
+.news ul.page li.disable,.news ul.page li.disable:hover{
+    border: 1px solid rgba(102, 102, 102, 0.29);
+}
+.news ul.page li.disable a,.news ul.page li.disable:hover a{
+    display: block;
+    color: rgba(102, 102, 102, 0.29);
+    background: #fff;
+}
+

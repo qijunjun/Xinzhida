@@ -1,0 +1,44 @@
+.content .rightcontent .case>h3{
+    background:linear-gradient(#fff,#ccc);
+    display: inline-block;
+    padding: 5px 15px;
+    border:1px solid #ccc;
+    border-bottom: none;
+    margin-top: 15px;
+}
+.case_con{
+    border:1px solid #ccc;
+    margin-top:-1px;
+}
+.case .case_title{
+    height:32px;
+    line-height: 32px;
+    text-align: center;
+    color:#d73131;
+    background: url("../../images/news_list_border.jpg") 0 bottom repeat-x;
+}
+.case .case_info{
+    text-align: center;
+    font-style: normal;
+    color:#666;
+    margin-top:5px;
+}
+.case article{
+    margin-top:15px;
+    padding:15px;
+    text-indent: 28px;
+    color:#333;
+    line-height:30px;
+}
+.caseimg{
+    width:600px;
+    margin: 15px auto;
+}
+.caseimg img,.solutionImg img{
+    width:100%;
+}
+.solutionImg{
+    width:750px;
+    border:1px solid #ccc;
+    padding:0 10px 10px;
+}

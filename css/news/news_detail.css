@@ -1,0 +1,35 @@
+.content .news-content .con>h3{
+    background:linear-gradient(#fff,#ccc);
+    display: inline-block;
+    padding: 5px 15px;
+    border:1px solid #ccc;
+    border-bottom: none;
+}
+.news{
+    border:1px solid #ccc;
+    margin-top:-1px;
+}
+.news .news_title{
+    height:32px;
+    line-height: 32px;
+    text-align: center;
+    color:#d73131;
+    background: url("../../images/news_list_border.jpg") 0 bottom repeat-x;
+}
+.news .news_info{
+    text-align: center;
+    font-style: normal;
+    color:#666;
+    margin-top:5px;
+}
+.news article{
+    margin-top:15px;
+    padding:15px;
+    text-indent: 28px;
+    color:#333;
+    line-height:30px;
+}
+.news .newsprev,.news .newsprev .next{
+    margin-left:15px;
+    margin-bottom:15px;
+}

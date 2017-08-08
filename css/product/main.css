@@ -33,7 +33,7 @@
     margin-top:15px;
 }
 .content .product-content .con h3{
-    background:#f7f7f7;
+    background:linear-gradient(#fff,#ccc);
     display: inline-block;
     padding: 5px 15px;
     border:1px solid #ccc;

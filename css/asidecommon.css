@@ -1,0 +1,35 @@
+.content{
+    width:1113px;
+    margin:0 auto;
+    background:#fff;
+}
+.content aside{
+    width:25%;
+}
+.content aside div h3{
+    background:#363601;
+    color:#fff;
+    height:35px;
+    line-height: 35px;
+    text-indent: 30px;
+}
+.content aside .companyNav ul li,.content aside .product-feilei ul li{
+    height:36px;
+    line-height:36px;
+    text-indent: 25px;
+    background: #ccc;
+    border-bottom: 1px solid #fff;
+}
+aside .companyNew li{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .rightcontent{
+    width:72%;
+    margin-left:2%;
+    margin-top:15px;
+}
+.border{
+    background: url("../images/news_list_border.jpg") 0 bottom repeat-x;
+}

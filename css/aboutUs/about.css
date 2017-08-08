@@ -1,0 +1,69 @@
+.info{
+    margin-top:15px;
+    text-indent: 28px;
+    line-height:26px;
+}
+.news-content p{
+    text-indent: 28px;
+}
+.news-content .biaoyu{
+    color:#0e90d2;
+    margin:5px 0;
+}
+.news-content .tuopu{
+    width:500px;
+   margin: 0 auto;
+}
+.news-content .tuopu img{
+    width:100%;
+}
+/*联系我们的样式*/
+.content .rightcontent .form>h3{
+    background:linear-gradient(#fff,#ccc);
+    display: inline-block;
+    padding: 5px 15px;
+    border:1px solid #ccc;
+    border-bottom: none;
+    margin-top: 15px;
+}
+.form_con{
+    height:400px;
+    border:1px solid #ccc;
+    margin-top:-1px;
+}
+.form_con form{
+    width:750px;
+    margin:15px auto;
+
+}
+.form_con form .form-group{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:15px;
+}
+.form-group label{
+    width:50px;
+    display: inline-block;
+}
+.form-group input,.form-group textarea{
+    width:300px;
+    height:32px;
+    padding:2px 15px;
+}
+.form-group  textarea{
+    height:66px;
+}
+.form-group button{
+    border:0;
+    width:80px;
+    height:36px;
+    line-height: 36px;
+    margin-left:15px;
+    color: #333;
+    background: linear-gradient(#fff, #ccc);
+}
+.error{
+    color:#d73131;
+    margin-left: 15px;
+}
