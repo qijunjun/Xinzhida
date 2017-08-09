@@ -1,4 +1,4 @@
-.content .rightcontent .case>h3{
+.content .rightcontent .case>h3,.content .rightcontent .jiameng_con>h3,.meng_con h3{
     background:linear-gradient(#fff,#ccc);
     display: inline-block;
     padding: 5px 15px;
@@ -6,7 +6,7 @@
     border-bottom: none;
     margin-top: 15px;
 }
-.case_con{
+.case_con,.jiameng_con{
     border:1px solid #ccc;
     margin-top:-1px;
 }
@@ -41,4 +41,22 @@
     width:750px;
     border:1px solid #ccc;
     padding:0 10px 10px;
+}
+/*加盟合作样式*/
+.jiameng_con{
+    position: relative;
+}
+.jiameng_box{
+    padding:5px;
+    float: left;
+}
+.imgbox{
+    padding:5px;
+    border:1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+.imgbox img{
+    width:150px;
+    height:auto;
 }
