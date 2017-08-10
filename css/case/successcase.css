@@ -6,9 +6,15 @@
     border-bottom: none;
     margin-top: 15px;
 }
-.case_con,.jiameng_con{
+.case_con,.jiameng{
     border:1px solid #ccc;
     margin-top:-1px;
+}
+.jiameng{
+    min-height:900px;
+}
+.content .rightcontent  .jiameng_con{
+   min-height: 300px;
 }
 .case .case_title{
     height:32px;
@@ -43,10 +49,10 @@
     padding:0 10px 10px;
 }
 /*加盟合作样式*/
-.jiameng_con{
+.jiameng{
     position: relative;
 }
-.jiameng_box{
+.box{
     padding:5px;
     float: left;
 }
