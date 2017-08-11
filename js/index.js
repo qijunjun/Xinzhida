@@ -2,9 +2,9 @@
  * Created by 123 on 2017/8/4.
  */
 $(function(){
-    $(".nav>li").hover(function(){
-        $(this).addClass("current").siblings().removeClass('current');
-    });
+    // $(".nav>li").hover(function(){
+    //     $(this).addClass("current").siblings().removeClass('current');
+    // });
     // 无缝滚动开始
     var speed =10;
     var demo = document.getElementById("demo");
