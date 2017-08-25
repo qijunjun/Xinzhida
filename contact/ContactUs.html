@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/asidecommon.css">
     <link rel="stylesheet" href="../css/aboutUs/about.css">
-    <script src="../js/jquery-1.12.4.min.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/contact.js"></script>
 </head>
 <body>
     <div class="contact">
@@ -109,7 +106,7 @@
             <div class="form">
                 <h3>留言咨询</h3>
                 <div class="form_con">
-                    <form action="">
+                    <div class="formbox">
                         <div class="form-group">
                             <label for="username">姓名:</label>
                             <input type="text" placeholder="请输入姓名" id="username">
@@ -132,14 +129,14 @@
                         </div>
                         <div class="form-group textarea">
                             <label for="content">内容:</label>
-                            <textarea id="content"></textarea>
+                            <textarea name="content" id="content" ></textarea>
                             <span class="error"></span>
                         </div>
                         <div class="form-group">
-                            <button>提交</button>
+                            <button id="btn">提交</button>
                             <button>取消</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,4 +147,11 @@
         <p>电话：028-6666668  传真：028-6666668  京ICP备*******8号</p>
     </footer>
 </body>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<!--<script>window.UEDITOR_HOME_URL = "../ueditor/";</script>-->
+<script src="../ueditor/ueditor.config.js"></script>
+<script src="../ueditor/ueditor.all.min.js"></script>
+<script src="../ueditor/lang/zh-cn/zh-cn.js"></script>
+<script src="../js/contact.js"></script>>
 </html>

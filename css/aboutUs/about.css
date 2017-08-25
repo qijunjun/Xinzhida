@@ -27,16 +27,16 @@
     margin-top: 15px;
 }
 .form_con{
-    height:400px;
+    min-height:400px;
     border:1px solid #ccc;
     margin-top:-1px;
 }
-.form_con form{
+.form_con .formbox{
     width:750px;
     margin:15px auto;
 
 }
-.form_con form .form-group{
+.form_con .formbox .form-group{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -66,4 +66,7 @@
 .error{
     color:#d73131;
     margin-left: 15px;
+}
+#content{
+    width:660px;
 }

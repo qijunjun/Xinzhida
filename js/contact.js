@@ -2,6 +2,8 @@
  * Created by 123 on 2017/8/8.
  */
 $(function(){
+    var editor = new baidu.editor.ui.Editor();
+    editor.render("content");
     var usernameVal ="";
     var emailVal = "";
     var QQVal = "";
@@ -12,10 +14,11 @@ $(function(){
     var regEmail = /\w+((-w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+/;
     var regQQ =/^\d{5,12}/;
     var regTel =/[0-9-()（）]{7,18}/;
+    
     // 封装验证函数
     function check(selector,val,reg,empty,regInfo){
         if(val == ""){
-            selector.next().html(empty).addClass("error");
+            selector.next().html(empty).addClass("error").removeClass("right");
             return false;
         }else{
             //其次验证是否符合相应的正则表达式
@@ -23,7 +26,7 @@ $(function(){
                 selector.next().html(regInfo);
                 return false;
             }else{
-                selector.next().hide();
+                selector.next().hide().addClass("right").removeClass("error");
             }
         }
     }
@@ -43,17 +46,29 @@ $(function(){
         telVal =$(this).val();
         check($(this),telVal,regTel,"电话不能为空","电话格式不正确")
     });
+
     $("#content").blur(function () {
-        contentVal = $(this).val();
-        if(contentVal == ""){
-            $(this).next().html("内容不能为空").addClass("error");
+        contentVal = editor.getContentTxt();
+        if(editor.hasContents()){
+            $(this).next().next().html("内容不能为空").addClass("error").removeClass("right");
             return false;
         }else{
-            $(this).next().hide();
+            $(this).next().hide().addClass("right").removeClass("error");
         }
     });
-    $("button").click(function(){
-       if($(".error").length != 0){
+    $("#btn").click(function(){
+        contentVal = editor.getContentTxt();
+       if($(".right").length != 5){
+           check($("#username"),usernameVal,regName,"用户名不能为空","用户名开头必须是以字母数字下划线，长度为5~15位");
+           check($("#email"),emailVal,regEmail,"邮箱不能为空","邮箱格式不正确");
+           check($("#QQ"),QQVal,regQQ,"QQ不能为空","QQ格式不正确");
+           check($("#tel"),telVal,regTel,"电话不能为空","电话格式不正确");
+           if(!editor.hasContents()){
+               $("#content").next().html("内容不能为空").addClass("error").removeClass("right");
+               return false;
+           }else{
+               $("#content").next().hide().addClass("right").removeClass("error");
+           }
            return false
        }else{
            $.ajax({
